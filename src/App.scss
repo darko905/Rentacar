@@ -1,0 +1,151 @@
+/*Google fonst*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+@import './styles/variable';
+@import './styles/header';
+
+
+/*Base*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body,
+button,
+input,
+textarea {
+    font-family: $body-font;
+    font-size: $normal-font-size;
+}
+
+body {
+    background-color: $body-color;
+    color: $text-color;
+}
+
+h1,
+h2,
+h3 {
+    color: $title-color;
+    font-weight: $font-semi-bold;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*css classes*/
+.section {
+    padding: 6rem 0 2rem;
+}
+
+.section__title {
+    font-size: $h1-font-size;
+    color: $title-color;
+}
+
+.section__subtitle {
+    display: block;
+    font-size: $small-font-size;
+    margin-bottom: 4rem;
+}
+
+.section__title,
+.section__subtitle {
+    text-align: center;
+}
+
+/*Layout*/
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+/*Buttons*/
+.button {
+    display: inline-block;
+    background-color: $first-color-dark;
+    color: $title-color;
+    padding: 1.25rem 3rem;
+    font-weight: $font-medium;
+}
+
+.button:hover {
+    background-color: $first-color-light;
+    color: $body-color;
+}
+
+.button__icon {
+    margin-left: $mb-0-5;
+}
+
+.button--flex {
+    display: inline-flex;
+    align-items: center;
+}
+
+
+
+
+@media screen and (max-width: 992px) {
+    .container {
+        margin-left: $mb-1-5;
+        margin-right: $mb-1-5;
+    }
+
+    .button {
+        padding: 1rem 1.75rem;
+    }
+
+    .section {
+        padding: 5rem 0 4rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        margin: 0 0 4.5rem 0;
+    }
+   
+    .section__subtitle {
+        margin-bottom: $mb-3;
+    }
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 350px) {
+    .container {
+        margin-left: $mb-1;
+        margin-right: $mb-1;
+    }
+
+}
