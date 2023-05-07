@@ -1,5 +1,5 @@
 import React from 'react'
-import BgCar from '../../images/hero/hero-bg.png'
+import BgCar from '../images/hero/hero-bg.png';
 import { AiFillCheckCircle } from 'react-icons/ai';
 import { MdKeyboardArrowRight } from 'react-icons/md';
 

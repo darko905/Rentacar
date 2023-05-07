@@ -4,6 +4,7 @@
 @import './styles/variable';
 @import './styles/header';
 @import './styles/hero';
+@import './styles/bookcars';
 
 
 /*Base*/
@@ -79,9 +80,9 @@ img {
 
 /*Layout*/
 .container {
-    max-width: 133rem;
-    margin-left: 2.5rem;
-    margin-right: 2.5rem;
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .grid {

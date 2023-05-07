@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { MdClose } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
-import Logo from '../../images/logo/logo.png'
+import Logo from '../images/logo/logo.png';
 
 const NavBar = () => {
     window.addEventListener('scroll', function(){

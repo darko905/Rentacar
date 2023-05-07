@@ -4,11 +4,10 @@
     top: 0;
     left: 0;
     z-index: $z-fixed;
-    // background-color: $body-color;
-    // box-shadow: 0 2px 2px -2px $title-color;
 }
 .scroll-header{
     background-color: $title-color;
+    color: $body-color
 }
 
 .nav {
@@ -33,6 +32,7 @@
     &__list{
         display: flex;
         column-gap: 2rem;
+        
     }
 
     &__item {
@@ -57,6 +57,7 @@
     &__close,
     &__toggle{
         display: none;
+        
     }
 }
 /*Active link*/
@@ -95,6 +96,7 @@
             flex-direction: column;
             row-gap: 1.5rem;
             align-items: flex-start;
+            
     
         }
 
@@ -117,6 +119,7 @@
         &__close,
         &__toggle{
             display: block;
+            color: $body-color;
         }
     }
 
@@ -130,6 +133,7 @@
 @media screen and (max-width: 768px) {
     .header {
         top: initial;
+        
         // box-shadow: 0 1px 1px 0px $title-color;
 
     }
@@ -175,6 +179,7 @@
         &__close,
         &__toggle{
             display: block;
+            color: $title-color;
         }
     }
 
