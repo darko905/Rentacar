@@ -7,7 +7,7 @@
 }
 .scroll-header{
     background-color: $title-color;
-    color: $body-color
+    color: $body-color;
 }
 
 .nav {
@@ -76,7 +76,7 @@
     background-color: $body-color;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
     .nav {
         height: 5rem;
 
@@ -119,7 +119,7 @@
         &__close,
         &__toggle{
             display: block;
-            color: $body-color;
+            color: $title-color;
         }
     }
 

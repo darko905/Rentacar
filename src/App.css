@@ -79,7 +79,7 @@
   background-color: hsl(180, 12%, 8%);
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1000px) {
   .nav {
     height: 5rem;
   }
@@ -112,7 +112,7 @@
   }
   .nav__close, .nav__toggle {
     display: block;
-    color: hsl(180, 12%, 8%);
+    color: hsl(180, 4%, 98%);
   }
   /*show menu*/
   .show-menu {
@@ -251,7 +251,7 @@
   }
   .home__img {
     width: 800px;
-    transform: translateX(15rem);
+    transform: translateX(3rem);
   }
   .home__triangle {
     height: 700px;
@@ -691,6 +691,65 @@
   gap: 3.2rem;
 }
 
+.service__container {
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  gap: 3rem;
+}
+
+.service__content {
+  text-align: center;
+  padding: 1rem 6rem;
+}
+
+.ico__circle-one {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+.ico__circle-two {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 36% 60% 41% 38%/44% 51% 31% 37%;
+}
+
+.ico__circle-three {
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 94% 6% 34% 66%/36% 31% 69% 64%;
+}
+
+.ico__circle-one,
+.ico__circle-two,
+.ico__circle-three {
+  background-color: hsla(79, 97%, 77%, 0.13);
+  width: 220px;
+  height: 135px;
+  margin: 1rem auto;
+}
+
+.service__icons {
+  font-size: 7rem;
+  padding: 10px;
+  color: hsl(79, 63%, 50%);
+}
+
+.service__title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 992px) {
+  .service__container {
+    grid-template-columns: repeat(2, 350px);
+  }
+}
+@media screen and (max-width: 768px) {
+  .service__container {
+    grid-template-columns: 1fr;
+  }
+  .service__content {
+    padding: 1rem !important;
+  }
+}
 /*Base*/
 * {
   margin: 0;
@@ -764,7 +823,7 @@ img {
 
 /*Layout*/
 .container {
-  max-width: 1320px;
+  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
 }
