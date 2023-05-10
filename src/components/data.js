@@ -1,12 +1,13 @@
-import Golf6 from "../images/cars-big/golf6.jpg";
-import AudiA1 from "../images/cars-big/audia1.jpg";
-import Toyota from "../images/cars-big/toyotacamry.jpg";
-import Bmw320 from "../images/cars-big/bmw320.jpg";
-import Benz from "../images/cars-big/benz.jpg";
-import Passat from "../images/cars-big/passatcc.jpg";
+import Golf6 from "../images/cars-big/golf6.png";
+import AudiA1 from "../images/cars-big/audia1.png";
+import Toyota from "../images/cars-big/toyotacamry.png";
+import Bmw320 from "../images/cars-big/bmw320.png";
+import Benz from "../images/cars-big/benz.png";
+import Passat from "../images/cars-big/passatcc.png";
 
-export const projectsData =[
+export const carData =[
     {
+    id:1,
     price: "37",
     img: Golf6,
     model: "Golf 6",
@@ -19,6 +20,7 @@ export const projectsData =[
     category: "golf6"
     },
     {
+    id:2,
     price: "45",
     img: AudiA1,
     model: "Audi",
@@ -31,6 +33,7 @@ export const projectsData =[
     category: 'audiA1'
     },
     {
+    id:3,
     price: "30",
     img: Toyota,
     model: "Camry",
@@ -43,6 +46,7 @@ export const projectsData =[
     category: "ToyotaCamry"
     },
     {
+    id:4,
     price: "35",
     img: Bmw320,
     model: "320",
@@ -55,6 +59,7 @@ export const projectsData =[
     category: "BMW320",
     },
     {
+    id:5,
     price: "50",
     img: Benz,
     model: "Benz GLK",
@@ -64,9 +69,10 @@ export const projectsData =[
     air: "Yes",
     transmission: "Manual",
     fuel: "Diesel",
-    category: "Mercedes-BenzGlk"
+    category: "MercedesGlk"
     },
     {
+    id:6,
     price: "25",
     img: Passat,
     model: "Passat CC",
@@ -81,7 +87,7 @@ export const projectsData =[
 ]
 
 
-export const projectsNav = [
+export const carNav = [
     {
         name: 'golf6',
     },
@@ -95,7 +101,7 @@ export const projectsNav = [
         name: "BMW320",
     },
     {
-        name: "Mercedes-BenzGLK",
+        name: "MercedesGLK",
     },
     {
         name: "VWPassatCC",

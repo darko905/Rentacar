@@ -2,6 +2,7 @@
 import './App.scss';
 import Home from './Pages/Home';
 import NavBar from './components/NavBar';
+import PickCar from './components/PickCar';
 import Plan from './components/Plan';
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <NavBar/>
       <Home/>
       <Plan/>
+      <PickCar/>
     </div>
   );
 }

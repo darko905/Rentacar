@@ -55,8 +55,8 @@
   
           label {
             font-size: $h2-font-size;
-            font-weight: 600;
-            margin-bottom: 1.2rem;
+            font-weight: $font-semi-bold;
+            margin-bottom: $mb-1-5;
   
             i {
               color: $first-color;
@@ -68,7 +68,7 @@
             color: $first-color-gray;
             border: 1px solid $first-color-gray;
             border-radius: 3px;
-            font-weight: 400;
+            font-weight: $font-normal;
             padding: 1.2rem 1.3rem;
             outline: none;
 
@@ -92,8 +92,8 @@
   
           label {
             font-size: $h2-font-size;
-            font-weight: 600;
-            margin-bottom: 1.2rem;
+            font-weight: $font-semi-bold;
+            margin-bottom: $mb-1-5;
   
             i {
               color: $first-color;
@@ -106,7 +106,7 @@
   
           ::-webkit-calendar-picker-indicator {
             cursor: pointer;
-            font-size: 1.6rem;
+            font-size: $h2-font-size;
           }
         }
       }
@@ -117,7 +117,7 @@
         align-self: self-end;
         border: none;
         font-size: $h2-font-size;
-        color: white;
+        color: $title-color;
         background-color: $first-color-alt;
         cursor: pointer;
         transition: all 0.3s;
@@ -136,7 +136,6 @@
     border-radius: 0.8rem;
     font-size: $small-font-size;
     font-weight: 500;
-  
     display: none;
     justify-content: space-between;
     align-items: center;
@@ -177,7 +176,6 @@
   .modal-overlay {
     opacity: 0;
     display: none;
-  
     position: fixed;
     width: 100%;
     height: 100%;
@@ -190,7 +188,6 @@
   .booking-modal {
     opacity: 0;
     display: none;
-  
     flex-direction: column;
     position: fixed;
     overflow-x: hidden;
@@ -219,7 +216,7 @@
       justify-content: space-between;
       padding: 1rem 1.5rem;
       background-color: $first-color-dark;
-      color: white;
+      color: $title-color;
       align-items: center;
   
       h2 {
@@ -228,13 +225,13 @@
       }
   
       i {
-        font-size: 2.5rem;
+        font-size: $h1-font-size;
         color: rgba(255, 255, 255, 0.919);
         cursor: pointer;
         transition: all 0.2;
   
         &:hover {
-          color: white;
+          color: $title-color
         }
       }
     }
@@ -257,19 +254,19 @@
       }
   
       p {
-        font-size: 1.7rem;
-        color: #777777;
-        font-weight: 500;
+        font-size: $h2-font-size;
+        color: $first-color-gray;
+        font-weight: $font-medium;
         line-height: 1.6;
       }
     }
   
     &__car-info {
-      background-color: white;
+      background-color: $title-color;
       padding: 3rem 3rem;
       display: grid;
       grid-template-columns: 1fr 1fr;
-      border-bottom: 1px solid #7777779f;
+      border-bottom: 1px solid $first-color-gray;
   
       @media (max-width: 650px) {
         grid-template-columns: 1fr;
@@ -282,7 +279,7 @@
         gap: 2rem;
   
         h5 {
-          font-size: 1.8rem;
+          font-size: $h2-font-size;
           color: $first-color;
         }
   
@@ -299,7 +296,7 @@
           i {
             font-size: 1.8rem;
             padding-top: 0.2rem;
-            color: #777777;
+            color: $first-color-gray;
   
             @media (max-width: 650px) {
               display: none;
@@ -312,8 +309,8 @@
           }
   
           p {
-            font-size: $small-font-size;
-            color: #777777;
+            font-size: $h3-font-size;
+            color: $first-color-gray;
           }
         }
       }
@@ -405,9 +402,13 @@
         gap: 0.4rem;
   
         label {
-          font-size: $small-font-size;
+          font-size: $h2-font-size;
           font-weight: 500;
-          color: #777777;
+          color: $first-color-gray;
+
+          @media (max-width: 768px) {
+            font-size: $normal-font-size;
+          }
   
           b {
             color: $first-color;
@@ -415,13 +416,19 @@
         }
   
         input {
-          padding: 14px 15px;
+          padding: 15px 10px;
           background-color: #dbdbdb;
           color: #555;
-          font-size: 1.5rem;
-          font-weight: 500;
+          font-size: $h2-font-size;
+          font-weight: $font-medium;
           outline: none;
           border: none;
+
+
+          @media (max-width: 768px) {
+            padding: 5px;
+            font-size: $normal-font-size;
+          }
         }
       }
     }
@@ -439,16 +446,16 @@
   
     button {
       font-size: $h3-font-size;
-      color: white;
-      font-weight: 700;
-      background-color: $first-color;
-      border: 1px solid yellow;
+      color: $title-color;
+      font-weight: $font-semi-bold;
+      background-color: $first-color-dark;
       padding: 1.2rem 2rem;
       cursor: pointer;
       transition: all 0.2s;
   
       &:hover {
-        background-color: #fe3516;
+        background-color: $first-color-light;
+        color: $body-color;
       }
     }
   }
