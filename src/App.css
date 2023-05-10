@@ -331,7 +331,7 @@
 .book-content__box .box-form__car-type label {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .book-content__box .box-form__car-type label i {
   color: hsl(79, 72%, 55%);
@@ -364,7 +364,7 @@
 .book-content__box .box-form__car-time label {
   font-size: 1.5rem;
   font-weight: 600;
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
 }
 .book-content__box .box-form__car-time label i {
   color: hsl(79, 72%, 55%);
@@ -374,7 +374,7 @@
 }
 .book-content__box .box-form__car-time ::-webkit-calendar-picker-indicator {
   cursor: pointer;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 .book-content__box button {
   padding: 1.3rem 1.3rem;
@@ -383,7 +383,7 @@
   align-self: self-end;
   border: none;
   font-size: 1.5rem;
-  color: white;
+  color: hsl(180, 4%, 98%);
   background-color: hsl(79, 67%, 52%);
   cursor: pointer;
   transition: all 0.3s;
@@ -477,7 +477,7 @@
   justify-content: space-between;
   padding: 1rem 1.5rem;
   background-color: hsl(79, 63%, 50%);
-  color: white;
+  color: hsl(180, 4%, 98%);
   align-items: center;
 }
 .booking-modal__title h2 {
@@ -491,7 +491,7 @@
   transition: all 0.2;
 }
 .booking-modal__title i:hover {
-  color: white;
+  color: hsl(180, 4%, 98%);
 }
 .booking-modal__message {
   display: flex;
@@ -509,17 +509,17 @@
   font-size: 2.5rem;
 }
 .booking-modal__message p {
-  font-size: 1.7rem;
-  color: #777777;
+  font-size: 1.5rem;
+  color: hsl(79, 6%, 64%);
   font-weight: 500;
   line-height: 1.6;
 }
 .booking-modal__car-info {
-  background-color: white;
+  background-color: hsl(180, 4%, 98%);
   padding: 3rem 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  border-bottom: 1px solid rgba(119, 119, 119, 0.6235294118);
+  border-bottom: 1px solid hsl(79, 6%, 64%);
 }
 @media (max-width: 650px) {
   .booking-modal__car-info {
@@ -533,7 +533,7 @@
   gap: 2rem;
 }
 .booking-modal__car-info__dates h5 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: hsl(79, 72%, 55%);
 }
 .booking-modal__car-info__dates span {
@@ -550,7 +550,7 @@
 .booking-modal__car-info__dates span i {
   font-size: 1.8rem;
   padding-top: 0.2rem;
-  color: #777777;
+  color: hsl(79, 6%, 64%);
 }
 @media (max-width: 650px) {
   .booking-modal__car-info__dates span i {
@@ -562,8 +562,8 @@
   margin-bottom: 0.2rem;
 }
 .booking-modal__car-info__dates span p {
-  font-size: 0.8rem;
-  color: #777777;
+  font-size: 1.25rem;
+  color: hsl(79, 6%, 64%);
 }
 .booking-modal__car-info__model {
   display: flex;
@@ -643,21 +643,32 @@
   gap: 0.4rem;
 }
 .info-form__2col span label, .info-form__1col span label {
-  font-size: 0.8rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  color: #777777;
+  color: hsl(79, 6%, 64%);
+}
+@media (max-width: 768px) {
+  .info-form__2col span label, .info-form__1col span label {
+    font-size: 1rem;
+  }
 }
 .info-form__2col span label b, .info-form__1col span label b {
   color: hsl(79, 72%, 55%);
 }
 .info-form__2col span input, .info-form__1col span input {
-  padding: 14px 15px;
+  padding: 15px 10px;
   background-color: #dbdbdb;
   color: #555;
   font-size: 1.5rem;
   font-weight: 500;
   outline: none;
   border: none;
+}
+@media (max-width: 768px) {
+  .info-form__2col span input, .info-form__1col span input {
+    padding: 5px;
+    font-size: 1rem;
+  }
 }
 
 .reserve-button {
@@ -673,16 +684,16 @@
 }
 .reserve-button button {
   font-size: 1.25rem;
-  color: white;
-  font-weight: 700;
-  background-color: hsl(79, 72%, 55%);
-  border: 1px solid yellow;
+  color: hsl(180, 4%, 98%);
+  font-weight: 600;
+  background-color: hsl(79, 63%, 50%);
   padding: 1.2rem 2rem;
   cursor: pointer;
   transition: all 0.2s;
 }
 .reserve-button button:hover {
-  background-color: #fe3516;
+  background-color: hsl(79, 97%, 77%);
+  color: hsl(180, 12%, 8%);
 }
 
 .dates-div {
@@ -691,15 +702,23 @@
   gap: 3.2rem;
 }
 
-.service__container {
+.plan__container {
   grid-template-columns: repeat(3, 400px);
   justify-content: center;
   gap: 3rem;
 }
-
-.service__content {
+.plan__content {
   text-align: center;
   padding: 1rem 6rem;
+}
+.plan__icons {
+  font-size: 7rem;
+  padding: 10px;
+  color: hsl(79, 63%, 50%);
+}
+.plan__title {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
 }
 
 .ico__circle-one {
@@ -726,28 +745,172 @@
   margin: 1rem auto;
 }
 
-.service__icons {
-  font-size: 7rem;
-  padding: 10px;
-  color: hsl(79, 63%, 50%);
-}
-
-.service__title {
-  font-size: 1.25rem;
-  margin-bottom: 2rem;
-}
-
 @media screen and (max-width: 992px) {
-  .service__container {
+  .plan__container {
     grid-template-columns: repeat(2, 350px);
   }
 }
 @media screen and (max-width: 768px) {
-  .service__container {
+  .plan__container {
     grid-template-columns: 1fr;
   }
-  .service__content {
+  .plan__content {
     padding: 1rem !important;
+  }
+}
+.car__filters {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 0.75rem;
+       column-gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.car__item {
+  cursor: pointer;
+  color: hsl(180, 4%, 98%);
+  padding: 0.3rem 1rem;
+  font-weight: 500;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+  background-color: hsl(79, 6%, 64%);
+  color: hsl(180, 12%, 8%);
+  width: 10rem;
+  text-align: center;
+}
+.car__item:hover {
+  background-color: hsl(79, 63%, 50%);
+  color: hsl(180, 12%, 8%);
+  transition: all 0.2s;
+}
+.car__container {
+  justify-content: center;
+}
+.car__card {
+  padding: 1.25rem;
+}
+.car__img {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.car__btn {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 1.5rem;
+       column-gap: 1.5rem;
+}
+.car__button {
+  color: var(--subtitle-color);
+  font-size: var(--normal-font-size);
+  padding: 0.5rem;
+}
+
+.active-car {
+  background-color: hsl(79, 63%, 50%);
+  color: hsl(180, 12%, 8%);
+}
+
+.pick-description {
+  width: 25rem;
+  margin: 0 auto;
+}
+.pick-description__price {
+  width: 100%;
+  background-color: hsl(79, 63%, 50%);
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  color: white;
+  padding: 0.3rem 1.9rem;
+  white-space: nowrap;
+}
+.pick-description__price span {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.pick-description__table {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  font-size: 1rem;
+}
+.pick-description__table__col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  grid-template-rows: auto;
+  padding: 0.9rem 0.5rem;
+  border-bottom: 2px solid hsl(79, 6%, 64%);
+  border-right: 2px solid hsl(79, 6%, 64%);
+  border-left: 2px solid hsl(79, 6%, 64%);
+}
+.pick-description__table__col span:nth-child(1) {
+  border-right: 2px solid hsl(79, 6%, 64%);
+}
+
+.cta-btn {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  background-color: hsl(79, 63%, 50%);
+  padding: 1rem 1rem;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 1.4rem;
+  transition: all 0.3s;
+}
+.cta-btn:hover {
+  background-color: hsl(79, 97%, 77%);
+  color: hsl(180, 12%, 8%);
+}
+
+@media screen and (max-width: 992px) {
+  .car__container {
+    gap: 1.25rem;
+  }
+  .car__card {
+    padding: 1rem;
+  }
+  .car__img {
+    margin-bottom: 0.75rem;
+  }
+  .car__title {
+    margin-bottom: 0.25rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .car__container {
+    grid-template-columns: max-content;
+  }
+  .car__filters {
+    flex-direction: column;
+  }
+  .car__item {
+    margin-bottom: 1rem;
+  }
+  .pick-description {
+    width: 20rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .car__container {
+    grid-template-columns: 1fr;
+  }
+  .car__img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 350px) {
+  .car__item {
+    font-size: var(--small-font-size);
+  }
+  .car__filters {
+    -moz-column-gap: 0.25rem;
+         column-gap: 0.25rem;
   }
 }
 /*Base*/

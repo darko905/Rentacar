@@ -1,0 +1,187 @@
+.car{
+    &__filters{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 0.75rem;
+        margin-bottom: $mb-2;
+    }
+
+    &__item{
+        cursor: pointer;
+        color: $title-color;
+        padding: 0.3rem 1rem;
+        font-weight: $font-medium;
+        border-radius: 0.5rem;
+        text-transform: capitalize;
+        background-color: $first-color-gray;
+        color: $body-color;
+        width: 10rem;
+        text-align: center;
+    }
+
+    &__item:hover{
+        background-color: $first-color-dark;
+        color: $body-color;
+        transition: all .2s;
+    }
+
+    &__container{
+        justify-content: center;
+    }
+
+    &__card{
+        padding: 1.25rem;
+    }
+
+    &__img{
+        width: 100%;
+        margin-bottom: $mb-2;
+    }
+
+    &__btn{
+        display: flex;
+        align-items: center;
+        column-gap: 1.5rem;
+    }
+    &__button{
+        color: var(--subtitle-color);
+        font-size: var(--normal-font-size);
+        padding: 0.5rem;
+    }
+}
+
+
+.active-car{
+    background-color: $first-color-dark;
+    color: $body-color;
+}
+
+//table
+.pick-description {
+    width: 25rem;
+    margin: 0 auto;
+  
+    &__price {
+      width: 100%;
+      background-color: $first-color-dark;
+      font-size: $h2-font-size;
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      color: white;
+      padding: 0.3rem 1.9rem;
+      white-space: nowrap;
+  
+      span {
+        font-size: $h1-font-size;
+        font-weight: 700;
+      }
+    }
+  
+    &__table {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      font-size: $normal-font-size;
+  
+      &__col {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-align: center;
+        grid-template-rows: auto;
+        padding: 0.9rem 0.5rem;
+        border-bottom: 2px solid $first-color-gray;
+        border-right: 2px solid $first-color-gray;
+        border-left: 2px solid $first-color-gray;
+  
+        span:nth-child(1) {
+          border-right: 2px solid $first-color-gray;
+        }
+      }
+    }
+  }
+  .cta-btn {
+    font-size: $h2-font-size;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    background-color: $first-color-dark;
+    padding: 1rem 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1.4rem;
+    transition: all 0.3s;
+    // box-shadow: 6px 6px 0 #efe9e9;
+  
+    &:hover {
+      background-color: $first-color-light;
+      color: $body-color
+    }
+  }
+
+
+  
+@media screen and (max-width: 992px) {
+    .car{
+        &__container{
+            gap: 1.25rem;
+        }
+        &__card{
+            padding: 1rem;
+        }
+        &__img{
+            margin-bottom: 0.75rem;
+        }
+        &__title{
+            margin-bottom: 0.25rem;
+        }
+    
+    
+    }
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .car{
+        &__container{
+            grid-template-columns: max-content;
+        }
+        &__filters{
+            flex-direction: column;
+        }
+        &__item{
+            margin-bottom: $mb-1;
+        }
+    }
+    .pick-description {
+        width: 20rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .car{
+        &__container{
+            grid-template-columns: 1fr;
+        }
+        &__img{
+            width: 100%;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .car{
+        &__item{
+            font-size: var(--small-font-size);
+        }
+        &__filters{
+            column-gap: 0.25rem;
+        }
+    }
+}
