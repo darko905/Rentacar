@@ -6,8 +6,8 @@
     z-index: $z-fixed;
 }
 .scroll-header{
-    background-color: $title-color;
-    color: $body-color;
+    background-color: $body-color;
+    border-bottom: 1px solid $first-color-light;
 }
 
 .nav {
@@ -51,7 +51,9 @@
         background-color: transparent !important;
     }
     &__button__sign-in:hover{
-        color: $first-color-dark !important;
+        color: $body-color !important;
+        background-color: $title-color !important;
+        transition: .3s;
     }
 
     &__close,

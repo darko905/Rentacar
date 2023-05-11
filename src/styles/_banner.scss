@@ -1,0 +1,51 @@
+.banner-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: $title-color;
+    margin: 6rem 0;
+    padding: 6rem 0;
+    text-align: center;
+  }
+  
+  .banner-content {
+    color: $body-color;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  
+    &__text {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+  
+      h2 {
+        font-size: $big-font-size;
+        line-height: 1.3;
+        -webkit-text-stroke: 1px $title-color-black;
+        color: transparent;
+        font-weight: $font-semi-bold;
+        
+  
+        @media (max-width: 768px) {
+          font-size: $h1-font-size;
+        }
+      }
+  
+      p {
+        font-size: $h2-font-size;
+        font-weight: $font-semi-bold;
+  
+        @media (max-width: 768px) {
+          font-size: $h3-font-size;
+        }
+      }
+  
+      span {
+        color: $first-color-dark;
+        font-weight: 500;
+      }
+    }
+  }

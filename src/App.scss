@@ -7,6 +7,9 @@
 @import './styles/bookcars';
 @import './styles/plan';
 @import './styles/pickcar';
+@import './styles/banner';
+@import './styles/choose';
+@import './styles/testominial';
 
 /*Base*/
 * {
@@ -57,6 +60,45 @@ img {
     max-width: 100%;
     height: auto;
 }
+
+// scroll bar ------
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $first-color-dark;
+  }
+  
+  /* Chrome, Edge and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+    width: 10px;
+  }
+  *::-webkit-scrollbar-track {
+    border-radius: 5px;
+    background-color: $body-color;
+  }
+  
+  *::-webkit-scrollbar-track:hover {
+    background-color: $body-color;
+  }
+  
+  *::-webkit-scrollbar-track:active {
+    background-color: $body-color;
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    background-color: $first-color-dark;
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background-color: $first-color-dark;
+  }
+  
+  *::-webkit-scrollbar-thumb:active {
+    background-color: $first-color-dark;
+  }
 
 /*css classes*/
 .section {
