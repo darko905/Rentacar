@@ -16,8 +16,8 @@
 }
 
 .scroll-header {
-  background-color: hsl(180, 4%, 98%);
-  color: hsl(180, 12%, 8%);
+  background-color: hsl(180, 12%, 8%);
+  border-bottom: 1px solid hsl(79, 97%, 77%);
 }
 
 .nav {
@@ -57,7 +57,9 @@
   background-color: transparent !important;
 }
 .nav__button__sign-in:hover {
-  color: hsl(79, 63%, 50%) !important;
+  color: hsl(180, 12%, 8%) !important;
+  background-color: hsl(180, 4%, 98%) !important;
+  transition: 0.3s;
 }
 .nav__close, .nav__toggle {
   display: none;
@@ -460,7 +462,7 @@
   border: 2px solid white;
   background-color: rgb(255, 255, 255);
   padding-right: 2px;
-  color: hsl(180, 4%, 12%);
+  color: hsl(180, 4%, 5%);
 }
 @media (max-width: 768px) {
   .booking-modal {
@@ -580,7 +582,7 @@
   color: hsl(79, 72%, 55%);
 }
 .booking-modal__car-info__model h5 span {
-  color: hsl(180, 4%, 12%);
+  color: hsl(180, 4%, 5%);
 }
 .booking-modal__car-info__model img {
   width: 100%;
@@ -913,6 +915,209 @@
          column-gap: 0.25rem;
   }
 }
+.banner-section {
+  width: 100%;
+  height: auto;
+  display: flex;
+  background-color: hsl(180, 4%, 98%);
+  margin: 6rem 0;
+  padding: 6rem 0;
+  text-align: center;
+}
+
+.banner-content {
+  color: hsl(180, 12%, 8%);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.banner-content__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.banner-content__text h2 {
+  font-size: 3rem;
+  line-height: 1.3;
+  -webkit-text-stroke: 1px hsl(180, 4%, 5%);
+  color: transparent;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .banner-content__text h2 {
+    font-size: 2.5rem;
+  }
+}
+.banner-content__text p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .banner-content__text p {
+    font-size: 1.25rem;
+  }
+}
+.banner-content__text span {
+  color: hsl(79, 63%, 50%);
+  font-weight: 500;
+}
+
+.choose-container {
+  display: flex;
+  flex-direction: column;
+}
+.choose-container__img {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+@media (max-width: 550px) {
+  .choose-container__img {
+    width: 100%;
+  }
+}
+
+.text-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2rem;
+  margin-top: 3rem;
+  width: 100%;
+}
+@media (max-width: 992px) {
+  .text-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 5.5rem;
+  }
+}
+.text-container__left {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  max-width: 40rem;
+  color: hsl(180, 4%, 72%);
+}
+@media (max-width: 992px) {
+  .text-container__left {
+    align-items: center;
+    text-align: center;
+  }
+}
+.text-container__left h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+.text-container__left h2 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+}
+.text-container__left p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 3rem;
+}
+.text-container__right {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  max-width: 35rem;
+}
+.text-container__right__box {
+  display: flex;
+}
+@media (max-width: 768px) {
+  .text-container__right__box {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.text-container__right__box__icon {
+  font-size: 5rem;
+  background-color: hsla(79, 97%, 77%, 0.13);
+  border-radius: 30% 70% 70% 30%/30% 30% 70% 70%;
+  text-align: center;
+  color: hsl(79, 63%, 50%);
+  padding: 10px;
+  margin: auto 1rem;
+  width: 250px;
+}
+@media (max-width: 768px) {
+  .text-container__right__box__icon {
+    width: 150px;
+    padding: 5px;
+    font-size: 3rem;
+  }
+}
+.text-container__right__box__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: center;
+}
+.text-container__right__box__text h4 {
+  font-size: 1.5rem;
+  color: hsl(180, 4%, 98%);
+}
+.text-container__right__box__text p {
+  font-size: 1rem;
+  color: hsl(180, 4%, 72%);
+  line-height: 1.3;
+}
+
+.section__description {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.testominial__container {
+  width: 750px;
+}
+@media screen and (max-width: 992px) {
+  .testominial__container {
+    width: initial;
+  }
+}
+.testominial__card {
+  background-color: hsl(180, 4%, 98%);
+  padding: 1.5rem 2rem;
+  border-radius: 1.5rem;
+  margin-bottom: 3rem;
+}
+@media screen and (max-width: 992px) {
+  .testominial__card {
+    padding: 1.25rem 1.5rem;
+  }
+}
+.testominial__img {
+  width: 60px;
+  border-radius: 3rem;
+  margin-bottom: 1rem;
+}
+.testominial__name {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+  color: hsl(180, 4%, 5%);
+}
+.testominial__description {
+  font-size: 1rem;
+}
+
+/*Swiper*/
+.swiper-pagination-bullet {
+  background-color: hsl(79, 63%, 50%) !important;
+}
+
+.swiper-pagination-active {
+  background-color: hsl(79, 63%, 50%) !important;
+}
+
 /*Base*/
 * {
   margin: 0;
@@ -961,6 +1166,44 @@ button {
 img {
   max-width: 100%;
   height: auto;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: hsl(79, 63%, 50%);
+}
+
+/* Chrome, Edge and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background-color: hsl(180, 12%, 8%);
+}
+
+*::-webkit-scrollbar-track:hover {
+  background-color: hsl(180, 12%, 8%);
+}
+
+*::-webkit-scrollbar-track:active {
+  background-color: hsl(180, 12%, 8%);
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 20px;
+  background-color: hsl(79, 63%, 50%);
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: hsl(79, 63%, 50%);
+}
+
+*::-webkit-scrollbar-thumb:active {
+  background-color: hsl(79, 63%, 50%);
 }
 
 /*css classes*/
