@@ -1,0 +1,70 @@
+
+
+.download{
+    &__content{
+        display: flex;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+
+    }
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        max-width: 35rem;
+        text-align: left;
+
+        @media (max-width: 768px) {
+            text-align: center; 
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: $h1-font-size;
+            color: $title-color;
+          }
+        
+        p {
+        font-size: $normal-font-size;
+        color: $first-color-gray;
+        line-height: 1.5;
+        }
+    }
+    &__right{
+        width: 35rem;
+        display: flex;
+        justify-content: end;
+
+        @media (max-width: 768px) {
+            width: 100%;
+            justify-content: center;
+        }
+        
+        img{
+            width: 300px;
+        }
+    }
+    
+      
+    
+      &__btns {
+        display: flex;
+        gap: 3rem;
+        margin-top: 2rem;
+
+        @media (max-width: 992px) {
+            justify-content: center;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        @media (max-width: 768px) {
+          justify-content: center;
+          flex-direction: column;
+          align-items: center;
+        }
+    }
+    
+}

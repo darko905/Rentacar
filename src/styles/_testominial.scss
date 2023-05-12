@@ -30,13 +30,14 @@
         margin-bottom: $mb-1;
     }
     &__name{
-        font-size: $normal-font-size;
-        font-weight: $font-medium;
+        font-size: $h2-font-size;
+        font-weight: $font-semi-bold;
         margin-bottom: $mb-0-25;
         color: $title-color-black;
     }
     &__description{
-        font-size: $normal-font-size
+        font-size: $normal-font-size;
+        color: $title-color-black;
     }
 
 }

@@ -48,12 +48,24 @@
         width: 350px;
         margin: 0 auto;
     }
+
+    &__buttons{
+        display: flex;
+        gap: 1rem;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+            max-width: 200px;
+            flex-direction: column;
+        }
+    }
     
     
     &__button-more{
         background-color: $title-color !important;
         color: $body-color !important;
     }
+    
     .button{
         &-icons{
             margin-left: 0.5rem;
