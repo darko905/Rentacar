@@ -37,6 +37,12 @@
   width: 130px;
   height: 50px;
 }
+@media screen and (max-width: 1024px) {
+  .nav__logo-img {
+    width: 100px;
+    height: 35px;
+  }
+}
 .nav__list {
   display: flex;
   -moz-column-gap: 2rem;
@@ -49,7 +55,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 1.25rem;
+  font-size: 1rem;
   color: hsl(180, 4%, 98%);
   transition: 0.3s;
 }
@@ -99,7 +105,6 @@
   .nav__list {
     flex-direction: column;
     row-gap: 1.5rem;
-    align-items: flex-start;
   }
   .nav__link {
     color: hsl(180, 12%, 8%);
@@ -214,6 +219,17 @@
   z-index: 1;
   width: 350px;
   margin: 0 auto;
+}
+.home__buttons {
+  display: flex;
+  gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .home__buttons {
+    margin: 0 auto;
+    max-width: 200px;
+    flex-direction: column;
+  }
 }
 .home__button-more {
   background-color: hsl(180, 4%, 98%) !important;
@@ -1052,6 +1068,7 @@
     width: 150px;
     padding: 5px;
     font-size: 3rem;
+    margin: 1rem auto;
   }
 }
 .text-container__right__box__text {
@@ -1100,13 +1117,14 @@
   margin-bottom: 1rem;
 }
 .testominial__name {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
   margin-bottom: 0.25rem;
   color: hsl(180, 4%, 5%);
 }
 .testominial__description {
   font-size: 1rem;
+  color: hsl(180, 4%, 5%);
 }
 
 /*Swiper*/
@@ -1116,6 +1134,143 @@
 
 .swiper-pagination-active {
   background-color: hsl(79, 63%, 50%) !important;
+}
+
+.all-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 4rem;
+}
+
+.faq-box {
+  display: flex;
+  flex-direction: column;
+  color: hsl(180, 4%, 5%);
+  background-color: white;
+  box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.1);
+  width: 70rem;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .faq-box {
+    width: 100%;
+  }
+}
+.faq-box__question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+  padding: 1.8rem 4.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: hsl(180, 4%, 5%);
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .faq-box__question {
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    gap: 0.5rem;
+  }
+}
+.faq-box__question-icon {
+  width: 2rem;
+}
+@media (max-width: 768px) {
+  .faq-box__question-icon {
+    font-size: 2.5rem;
+  }
+}
+.faq-box__answer {
+  font-size: 1rem;
+  color: hsl(180, 4%, 72%);
+  line-height: 1.7;
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 4.5rem;
+}
+.faq-box__answer-show {
+  max-height: 20rem;
+  padding: 2.8rem 4.5rem;
+  transition: 0.4s;
+}
+@media (max-width: 768px) {
+  .faq-box__answer-show {
+    max-height: 30rem;
+    padding: 0.5rem;
+  }
+}
+@media (max-width: 420px) {
+  .faq-box__answer-show {
+    max-height: 20rem;
+  }
+}
+
+.download__content {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .download__content {
+    flex-direction: column;
+  }
+}
+.download__text {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  max-width: 35rem;
+  text-align: left;
+}
+@media (max-width: 768px) {
+  .download__text {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+.download__text h2 {
+  font-size: 2.5rem;
+  color: hsl(180, 4%, 98%);
+}
+.download__text p {
+  font-size: 1rem;
+  color: hsl(79, 6%, 64%);
+  line-height: 1.5;
+}
+.download__right {
+  width: 35rem;
+  display: flex;
+  justify-content: end;
+}
+@media (max-width: 768px) {
+  .download__right {
+    width: 100%;
+    justify-content: center;
+  }
+}
+.download__right img {
+  width: 300px;
+}
+.download__btns {
+  display: flex;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+@media (max-width: 992px) {
+  .download__btns {
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media (max-width: 768px) {
+  .download__btns {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 /*Base*/
@@ -1218,7 +1373,7 @@ img {
 
 .section__subtitle {
   display: block;
-  font-size: 0.8rem;
+  font-size: 1.25rem;
   margin-bottom: 4rem;
 }
 

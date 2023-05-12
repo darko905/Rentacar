@@ -10,6 +10,8 @@
 @import './styles/banner';
 @import './styles/choose';
 @import './styles/testominial';
+@import './styles/faq';
+@import './styles/download';
 
 /*Base*/
 * {
@@ -112,7 +114,7 @@ img {
 
 .section__subtitle {
     display: block;
-    font-size: $small-font-size;
+    font-size: $h3-font-size;
     margin-bottom: 4rem;
 }
 

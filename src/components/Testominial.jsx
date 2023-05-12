@@ -45,7 +45,7 @@ const Testominial = () => {
               <img src={image} alt={title} className="testominial__img" />
 
               <h3 className="testominial__name">{title}</h3>
-              <p className="testominial__description">{description}</p>
+              <p className="testominial__description">"{description}"</p>
             </SwiperSlide>
           );
         })}
