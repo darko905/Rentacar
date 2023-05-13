@@ -5,6 +5,7 @@ import Banner from './components/Banner';
 import Choose from './components/Choose';
 import Download from './components/Download';
 import Faq from './components/Faq';
+import Footer from './components/Footer';
 import NavBar from './components/NavBar';
 import PickCar from './components/PickCar';
 import Plan from './components/Plan';
@@ -22,6 +23,7 @@ function App() {
       <Testominial/>
       <Faq/>
       <Download/>
+      <Footer/>
     </div>
   );
 }

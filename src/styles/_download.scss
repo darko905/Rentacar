@@ -35,7 +35,7 @@
     &__right{
         width: 35rem;
         display: flex;
-        justify-content: end;
+        justify-content: flex-end;
 
         @media (max-width: 768px) {
             width: 100%;
