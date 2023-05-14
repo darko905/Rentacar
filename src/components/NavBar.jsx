@@ -39,9 +39,9 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#models' onClick={() => setActiveNav('#models')} className={activeNav === "#models" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/models' onClick={() => setActiveNav('#models')} className={activeNav === "#models" ? "nav__link active-link" : "nav__link"}>
                                 Vehicle Models
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#testominials' onClick={() => setActiveNav('#testominials')} className={activeNav === "#testominials" ? "nav__link active-link" : "nav__link"}>
