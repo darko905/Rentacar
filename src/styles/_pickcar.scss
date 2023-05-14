@@ -59,7 +59,7 @@
 
 //table
 .pick-description {
-    width: 25rem;
+    width: 20rem;
     margin: 0 auto;
   
     &__price {
@@ -160,7 +160,10 @@
         }
     }
     .pick-description {
-        width: 20rem;
+        width: 100%;
+        &__price {
+            font-size: 1rem;
+        }
     }
 }
 

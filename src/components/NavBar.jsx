@@ -1,7 +1,9 @@
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react'
 import { MdClose } from "react-icons/md";
 import { FaBars } from "react-icons/fa";
 import Logo from '../images/logo/logo.png';
+
 
 const NavBar = () => {
     window.addEventListener('scroll', function(){
@@ -27,14 +29,14 @@ const NavBar = () => {
                 <div className={Toogle ? "nav__menu show-menu": "nav__menu"}>
                     <ul className='nav__list '>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#home' onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/' onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
                                 Home 
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/about' onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
                                 About
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#models' onClick={() => setActiveNav('#models')} className={activeNav === "#models" ? "nav__link active-link" : "nav__link"}>
