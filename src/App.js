@@ -1,30 +1,20 @@
 
 import './App.scss';
+import About from './Pages/About';
 import Home from './Pages/Home';
-import Banner from './components/Banner';
-import Choose from './components/Choose';
-import Download from './components/Download';
-import Faq from './components/Faq';
-import Footer from './components/Footer';
 import NavBar from './components/NavBar';
-import PickCar from './components/PickCar';
-import Plan from './components/Plan';
-import Testominial from './components/Testominial';
+import { Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar/>
-      <Home/>
-      <Plan/>
-      <PickCar/>
-      <Banner/>
-      <Choose/>
-      <Testominial/>
-      <Faq/>
-      <Download/>
-      <Footer/>
-    </div>
+      <Routes>
+        <Route index path='/' element={<Home/>}/>
+        <Route index path='about' element={<About/>}/>
+      </Routes>
+      
+    </>
   );
 }
 
