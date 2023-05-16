@@ -29,24 +29,24 @@ const NavBar = () => {
                 <div className={Toogle ? "nav__menu show-menu": "nav__menu"}>
                     <ul className='nav__list '>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <Link to='/' onClick={() => setActiveNav('#home')} className={activeNav === "#home" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/' onClick={() => setActiveNav('/')} className={activeNav === "/" ? "nav__link active-link" : "nav__link"}>
                                 Home 
                             </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <Link to='/about' onClick={() => setActiveNav('#about')} className={activeNav === "#about" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/about' onClick={() => setActiveNav('/about')} className={activeNav === "/about" ? "nav__link active-link" : "nav__link"}>
                                 About
                             </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <Link to='/models' onClick={() => setActiveNav('#models')} className={activeNav === "#models" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/models' onClick={() => setActiveNav('/models')} className={activeNav === "/models" ? "nav__link active-link" : "nav__link"}>
                                 Vehicle Models
                             </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#testominials' onClick={() => setActiveNav('#testominials')} className={activeNav === "#testominials" ? "nav__link active-link" : "nav__link"}>
+                            <Link to="/testominial" onClick={() => setActiveNav('/testominial')} className={activeNav === "/testominial" ? "nav__link active-link" : "nav__link"}>
                                 Testominials
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <a href='#team' onClick={() => setActiveNav('#team')} className={activeNav === "#team" ? "nav__link active-link" : "nav__link"}>
