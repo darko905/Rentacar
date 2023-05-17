@@ -1,6 +1,7 @@
 
 import './App.scss';
 import About from './Pages/About';
+import Contact from './Pages/Contact';
 import Home from './Pages/Home';
 import Models from './Pages/Models';
 import TestominialPage from './Pages/TestominialPage';
@@ -16,6 +17,7 @@ function App() {
         <Route index path='about' element={<About/>}/>
         <Route index path='models' element={<Models/>}/>
         <Route index path='testominial' element={<TestominialPage/>}/>
+        <Route index path='contact' element={<Contact/>}/>
       </Routes>
       
     </>

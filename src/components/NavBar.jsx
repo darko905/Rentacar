@@ -54,9 +54,9 @@ const NavBar = () => {
                             </a>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav === "#contact" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/contact' onClick={() => setActiveNav('/contact')} className={activeNav === "/contact" ? "nav__link active-link" : "nav__link"}>
                                 Contact
-                            </a>
+                            </Link>
                         </li>
                     </ul>
 
