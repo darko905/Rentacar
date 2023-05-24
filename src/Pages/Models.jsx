@@ -38,12 +38,9 @@ const Models = () => {
                         </div>
                         <div className="models-div__box__descr__name-price__details">
                           <span>{mark}</span>
-                          <span style={{ textAlign: "right" }}>
-                            {doors} &nbsp;{" "}
-                            <i className="fa-solid fa-car-side"></i>
-                          </span>
+                          <span>{doors} &nbsp;</span>
                           <span>{transmission}</span>
-                          <span style={{ textAlign: "right" }}>{fuel}</span>
+                          <span>{fuel}</span>
                         </div>
                         <div className="models-div__box__descr__name-price__btn">
                           <Link className="button" to="/">

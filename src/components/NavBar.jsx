@@ -18,7 +18,7 @@ const NavBar = () => {
     })
 
     const [Toogle, showMenu] = useState(false);
-    const [activeNav, setActiveNav] = useState('#home');
+    const [activeNav, setActiveNav] = useState('/home');
   return (
     <header className='header'>
             <nav className='nav container'>
@@ -49,9 +49,9 @@ const NavBar = () => {
                             </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
-                            <a href='#team' onClick={() => setActiveNav('#team')} className={activeNav === "#team" ? "nav__link active-link" : "nav__link"}>
+                            <Link to='/team' onClick={() => setActiveNav('#team')} className={activeNav === "#team" ? "nav__link active-link" : "nav__link"}>
                                 Our Team
-                            </a>
+                            </Link>
                         </li>
                         <li className='nav__item' onClick={()=> showMenu(!Toogle)}>
                             <Link to='/contact' onClick={() => setActiveNav('/contact')} className={activeNav === "/contact" ? "nav__link active-link" : "nav__link"}>

@@ -1522,13 +1522,12 @@
 
 .models-div {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
+  grid-template-columns: repeat(2, 400px);
+  justify-content: center;
   gap: 2rem;
   align-items: center;
   text-align: center;
   padding: 10rem 0;
-  width: 75rem;
   margin: 0 auto;
 }
 @media (max-width: 1150px) {
@@ -1549,7 +1548,6 @@
   border: 1px solid #d5d5d5;
   border-radius: 0.3rem;
   display: flex;
-  width: 35rem;
   flex-direction: column;
 }
 @media (max-width: 400px) {
@@ -1565,7 +1563,7 @@
 }
 .models-div__box__img img {
   width: 100%;
-  height: 27rem;
+  height: auto;
 }
 .models-div__box__descr {
   padding: 2rem 3rem;
@@ -1604,11 +1602,10 @@
   font-size: 1rem;
 }
 .models-div__box__descr__name-price__details {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  row-gap: 2rem;
-  -moz-column-gap: 7rem;
-       column-gap: 7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   margin-top: 2.5rem;
   margin: 2rem auto;
   padding-bottom: 2.5rem;
@@ -1618,7 +1615,6 @@
   font-size: 1.8rem;
   font-weight: 500;
   color: #777777;
-  text-align: left;
 }
 .models-div__box__descr__name-price__details span i {
   color: hsl(180, 4%, 98%);
@@ -1756,6 +1752,59 @@
 
 .contact__button:hover .contact__button-icon {
   transform: translate(0.25rem);
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  text-align: center;
+  padding: 10rem 2rem;
+  margin: 0 auto;
+}
+@media (max-width: 1150px) {
+  .team-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 800px) {
+  .team-container {
+    grid-template-columns: 1fr;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+}
+.team-container__box {
+  background-color: white;
+  box-shadow: 0px 20px 10px 0px rgba(0, 0, 0, 0.08);
+}
+@media (max-width: 400px) {
+  .team-container__box {
+    width: 100%;
+  }
+}
+.team-container__box__img-div {
+  width: 100%;
+  height: auto;
+  background-color: #f6f6f6;
+}
+.team-container__box__img-div img {
+  width: 100%;
+}
+.team-container__box__descr {
+  color: hsl(180, 4%, 98%);
+  padding: 3rem;
+}
+.team-container__box__descr h3 {
+  font-size: 1.25rem;
+  color: hsl(180, 4%, 5%);
+}
+.team-container__box__descr p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #777777;
 }
 
 /*Base*/
