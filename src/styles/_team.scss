@@ -1,0 +1,55 @@
+.team-container {
+    display: grid;
+    grid-template-columns: repeat(3, 400px);
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    text-align: center;
+    padding: 10rem 2rem;
+    margin: 0 auto;
+  
+    @media (max-width: 1150px) {
+      grid-template-columns: 1fr 1fr;
+    //   width: fit-content;
+    }
+  
+    @media (max-width: 800px) {
+      grid-template-columns: 1fr;
+      width: fit-content;
+    }
+  
+    &__box {
+        //   width: 33rem;
+      background-color: white;
+      box-shadow: 0px 20px 10px 0px rgb(0 0 0 / 8%);
+  
+      @media (max-width: 400px) {
+        width: 100%;
+      }
+  
+      &__img-div {
+        width: 100%;
+        height: auto;
+        background-color: #f6f6f6;
+        img {
+          width: 100%;
+        }
+      }
+  
+      &__descr {
+        color: $title-color;
+        padding: 3rem;
+  
+        h3 {
+          font-size: $h3-font-size;
+          color: $title-color-black;
+        }
+  
+        p {
+          font-size: $normal-font-size;
+          font-weight: 500;
+          color: #777777;
+        }
+      }
+    }
+  }

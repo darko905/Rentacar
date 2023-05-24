@@ -1,12 +1,11 @@
 .models-div {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto;
+    grid-template-columns: repeat(2, 400px);
+    justify-content: center;
     gap: 2rem;
     align-items: center;
     text-align: center;
     padding: 10rem 0;
-    width: 75rem;
     margin: 0 auto;
   
     @media (max-width: 1150px) {
@@ -23,7 +22,7 @@
       border: 1px solid #d5d5d5;
       border-radius: 0.3rem;
       display: flex;
-      width: 35rem;
+      // width: 35rem;
       flex-direction: column;
   
       @media (max-width: 400px) {
@@ -38,7 +37,7 @@
   
         img {
           width: 100%;
-          height: 27rem;
+          height: auto;
         }
       }
   
@@ -90,10 +89,12 @@
           }
   
           &__details {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            row-gap: 2rem;
-            column-gap: 7rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            // row-gap: 2rem;
+            // column-gap: 7rem;
             margin-top: 2.5rem;
             margin: 2rem auto;
             padding-bottom: 2.5rem;
@@ -102,9 +103,7 @@
             span {
               font-size: 1.8rem;
               font-weight: 500;
-              color: #777777;
-              text-align: left;
-  
+              color: #777777;  
               i {
                 color: $title-color;
               }
